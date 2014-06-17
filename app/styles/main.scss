@@ -1,3 +1,24 @@
+@import "bourbon/bourbon";
+
+.fancy  {
+    position:fixed;  
+    top: 0;  
+    z-index: 1;  
+    width: 100%;
+    background-color: orange;
+    font-family: 'Glegoo', serif;
+    font-style: normal;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+/*
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,3 +47,4 @@ body {
     color: #000;
     padding: 0.2em 0;
 }
+*/
