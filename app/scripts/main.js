@@ -1,8 +1,11 @@
+
+
 var item = '';
-etsyitems.forEach (function(a){
-	item = '<li><img src="' + a.url_170x135 + '" /><h4>' + a.title + '</h4><h5>' + a.user_ID + '</h5><a>' + a.price + '</a>';
+
+etsyitems.results.forEach (function (a) {
+	item = '<li><img src="' + a.Images[0].url_170x135 + '" /><h4>' + a.title + '</h4><h5>' + a.user_id + '</h5><a href="#">' + '$' + a.price + ' ' + a.currency_code +'</a>';
 	item += '</li>';
-  $('#tile').append(item);
+	$('#tile').append(item);
 });
 
 
@@ -13,15 +16,24 @@ etsyitems.forEach (function(a){
 
 
 
-
-
-
 /*
-   if (a.url_170x135) {
-    item += '<img src="' + a.url_170x135;
-  }
 
-item = '<section><img src="">' + a.title + a.price + a.url_170x135 + '</section>';
+var $newdiv1 = $( "<div id='object1'/>" ),
+  newdiv2 = document.createElement( "div" ),
+  existingdiv1 = document.getElementById( "foo" );
+ 
+$( "body" ).append( $newdiv1, [ newdiv2, existingdiv1 ] );
+
+
+etsyitems.forEach (function (a) {
+	item = '<li><img src="' + a.url_170x135 + '" /><h4>' + a.title + '</h4><h5>' + a.user_id + '</h5><a>' + a.price + '</a>';
+	item += '</li>';
+  $('#tile').append(item);
+});
+
+
+
+
 
 
 

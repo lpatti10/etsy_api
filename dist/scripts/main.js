@@ -1,1 +1,1 @@
-var item="";etsyitems.forEach(function(i){item='<li><img src="'+i.url_170x135+'" /><h4>'+i.title+"</h4><h5>"+i.user_ID+"</h5><a>"+i.price+"</a>",item+="</li>",$("#tile").append(item)});
+var item="";etsyitems.results.forEach(function(e){item='<li><img src="'+e.Images[0].url_170x135+'" /><h4>'+e.title+"</h4><h5>"+e.user_id+'</h5><a href="#">$'+e.price+" "+e.currency_code+"</a>",item+="</li>",$("#tile").append(item)});
